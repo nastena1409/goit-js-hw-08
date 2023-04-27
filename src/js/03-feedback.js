@@ -6,7 +6,7 @@ const messageInput = document.querySelector('textarea');
 const STORAGE_KEY = 'feedback-form-state';
 
 let formData = {};
-form.addEventListener('input', onInputForm);
+form.addEventListener('input', throttle(onInputForm, 500));
 form.addEventListener('submit', onSubmitForm);
 
 

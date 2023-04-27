@@ -41,5 +41,3 @@ galleryList.insertAdjacentHTML('beforeend', galleryEl);
             captionDelay: 250,
             captionsData: "alt",
         });
-
-console.log(galleryItems);
