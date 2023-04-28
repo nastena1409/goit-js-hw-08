@@ -24,10 +24,10 @@ function onInputForm(e) {
 }
 
 function onSubmitForm(e) {
+    e.preventDefault();
     if (!emailInput.value || !messageInput.value) {
         return;
     }
-    e.preventDefault();
     form.reset();
     localStorage.removeItem(STORAGE_KEY);
 
